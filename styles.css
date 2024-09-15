@@ -9,11 +9,16 @@ body {
 }
 
 /* Hero Section */
-.hero-slideshow {
+.hero {
     position: relative;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #222;
+    height: 60vh; /* Adjusted height */
+    background-image: url('back.jpg'); /* Set your desired background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 .overlay {
@@ -26,51 +31,12 @@ body {
     z-index: 1;
 }
 
-.slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    animation: slideAnimation 10s infinite;
-    background-size: cover;
-    background-position: center;
-    transition: opacity 0.5s;
-}
-
-@keyframes slideAnimation {
-    0%, 30% {
-        opacity: 1;
-    }
-    33%, 100% {
-        opacity: 0;
-    }
-}
-
-.slide1 {
-    background-image: url('your-image1.jpg');
-    animation-delay: 0s;
-}
-
-.slide2 {
-    background-image: url('your-image2.jpg');
-    animation-delay: 10s;
-}
-
-.slide3 {
-    background-image: url('your-image3.jpg');
-    animation-delay: 20s;
-}
-
-.slide-content {
+.hero-content {
     position: relative;
     z-index: 2;
-    color: white;
     text-align: center;
     padding: 20px;
-    animation: fadeInUp 2s ease-out;
+    animation: fadeInUp 1s ease-out; /* Adjusted animation duration */
 }
 
 @keyframes fadeInUp {
@@ -84,12 +50,12 @@ body {
     }
 }
 
-.slide-content h1 {
+.hero-content h1 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
 
-.slide-content p {
+.hero-content p {
     font-size: 1.5rem;
     margin-bottom: 30px;
 }
@@ -144,6 +110,45 @@ body {
     margin: 0 auto;
 }
 
+/* Education Section */
+.education-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.education-section h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.education-card {
+    display: inline-block;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.education-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.education-card h3 {
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+.education-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
 /* Projects Section */
 .projects-section {
     text-align: center;
@@ -187,39 +192,243 @@ body {
     font-size: 1rem;
 }
 
-/* Contact Section */
-.contact-section {
+/* Patents Section */
+.patents-section {
     text-align: center;
     padding: 80px 20px;
     background-color: #f4f4f4;
 }
 
-.contact-section form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
+.patents-section h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
 }
 
-.contact-section input, .contact-section textarea {
-    padding: 15px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
+.patent-card {
+    display: inline-block;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.patent-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.patent-card h3 {
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+.patent-card p {
+    color: #666;
     font-size: 1rem;
 }
 
-.contact-section button {
-    padding: 15px;
-    border: none;
-    background-color: #ff6f61;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
 }
 
-.contact-section button:hover {
+.social-media-links {
+    margin-top: 20px;
+}
+
+.social-media-button {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.social-media-button:hover {
     background-color: #ff9f91;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .education-card, .project-card, .patent-card {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+/* Achievements Section */
+.achievements-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f4f4f4;
+    color: #090909;
+}
+
+.achievements-section h2 {
+    color:black;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.achievements-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.achievements-list li {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.achievements-list li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.achievements-list h3 {
+    color: #ff6f61;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.achievements-list p {
+    color: #666;
+    font-size: 1rem;
+}
+/* Navigation Bar */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    border-radius: 8px;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    color: #fff;
+    background-color: #ff6f61;
+    transform: translateY(-3px);  /* Adds a lift effect when hovering */
+}
+
+/* Optional: Add an active class for the current page/section */
+.nav-links a.active {
+    color: #fff;
+    background-color: #ff6f61;
+}
+
+
+/* Footer Section */
+.footer-section {
+    background-color: #222;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Footer Text */
+.footer-container p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* Footer Logos */
+.footer-logos {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-logos a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.footer-logos a:hover {
+    transform: scale(1.1);
+}
+
+.footer-logos img {
+    width: 40px;
+    height: 40px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.footer-logos img:hover {
+    filter: grayscale(0%);
 }

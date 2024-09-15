@@ -8,67 +8,115 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">MyPortfolio</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#patents">Patents</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
   
-    <!-- Hero Slideshow Section -->
-    <section class="hero-slideshow">
-        <section class="slide slide1">
-            <section class="overlay"></section>
-            <section class="slide-content">
-                <h1>Welcome to My Portfolio</h1>
-                <p>Creating innovative solutions for modern challenges.</p>
-                <a href="#projects" class="cta-button">Explore Projects</a>
-            </section>
-        </section>
-        <section class="slide slide2">
-            <section class="overlay"></section>
-            <section class="slide-content">
-                <h1>Web Development & Design</h1>
-                <p>Crafting responsive and user-centric websites.</p>
-                <a href="#projects" class="cta-button">View Work</a>
-            </section>
-        </section>
-        <section class="slide slide3">
-            <section class="overlay"></section>
-            <section class="slide-content">
-                <h1>Let's Build Together</h1>
-                <p>Collaborating to deliver powerful digital experiences.</p>
-                <a href="#contact" class="cta-button">Contact Me</a>
-            </section>
-        </section>
+    <!-- Static Hero Section -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Innovative machine learning solutions for real-world challenges.</p>
+            <a href="#projects" class="cta-button">Explore Projects</a>
+        </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about-section">
         <h2>About Me</h2>
-        <img src="profile.jpg" alt="Your Name" class="profile-image">
-        <p>I’m a passionate web developer focused on creating modern, responsive websites with engaging user experiences.</p>
+        <img src="my.jpeg" alt="NITHIN ROMTALA" class="profile-image">
+        <p>I am a passionate developer focused on creating innovative solutions in machine learning and computer vision. My projects reflect my commitment to solving real-world problems, such as detecting violence and improving communication through hand gesture recognition. I enjoy building models that not only push the boundaries of technology but also have a meaningful impact on society.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <h2>Education</h2>
+        <div class="education-card">
+            <h3>Schooling</h3>
+            <p><strong>BHASHYAM HIGH SCHOOL</strong></p>
+            <p>Completed high school with a strong academic record, emphasizing core subjects relevant to future studies with CGPA of 9.8.</p>
+        </div>
+        <div class="education-card">
+            <h3>Intermediate</h3>
+            <p><strong>BHASHYAM JUNIOR COLLEGE</strong></p>
+            <p>Completed with a focus on subjects foundational to higher education in technology and sciences.</p>
+        </div>        
+       
+        <div class="education-card">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p><strong>HYDERABAD INSTITUTE OF TECHNOLOGY AND MANAGMENT</strong>, 2020 - 2024</p>
+            <p>Graduated with honors, focusing on machine learning and artificial intelligence.</p>
+        </div>
+        <div class="education-card">
+            <h3>Master of Science in Information Technology</h3>
+            <p><strong>IIIT HYDERABAD</strong>, 2024 - 2026</p>
+            <p>Specialized in Information Technology.</p>
+        </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
         <h2>My Projects</h2>
         <section class="project-card">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Project Title 1</h3>
-            <p>Short description of the project and the technologies used.</p>
+            <h3>Violence Detection</h3>
+            <p>A model that effectively measures the percentage of violence when something harmful is detected.</p>
         </section>
         <section class="project-card">
-            <img src="project2.jpg" alt="Project 2">
-            <h3>Project Title 2</h3>
-            <p>Short description of the project and the technologies used.</p>
+            <h3>Hand Gesture Recognition</h3>
+            <p>The effective recognition of hand gestures, breaking the communication barrier between people.</p>
+        </section>
+        <section class="project-card">
+            <h3>Twitter URL-Based Classification</h3>
+            <p>A model designed to classify and analyze Twitter URLs, identifying patterns and insights from social media content.</p>
         </section>
     </section>  
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact Me</h2>
-        <form action="/submit-form" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <!-- Patents Section -->
+    <section id="patents" class="patents-section">
+        <h2>Patents</h2>
+        <section class="patent-card">
+            <h3>AI/ML Algorithm for Violence Detection</h3>
+            <p>Patent No: 202341029626</p>
+            <p>An Improved Version of AI/ML Algorithm for Violence Detection. This AI/ML algorithm is designed to detect violence in real-time through continuous CCTV monitoring. Alerts the user upon detecting violent behavior, enhancing security.</p>
+        </section>     
     </section>
+    <!-- Achievements Section -->
+<section id="achievements" class="achievements-section">
+    <h2>Achievements</h2>
+    <ul class="achievements-list">
+        <li>
+            <h3>GCSP Graduate</h3>
+            <p>GCSP Graduate-2024, Recognized by National Academy of Engineering.</p>
+        </li>
+</section>
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Social Media Logos -->
+            <div class="footer-logos">
+                <a href="https://www.linkedin.com/in/nithinrontala" target="_blank">
+                    <img src="LinkedIn.png" alt="LinkedIn Logo">
+                </a>
+                <a href="nithinrontala02@gmail.com" target="_blank">
+                    <img src="email.webp" alt="E-mail">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
 
 </body>
 </html>
