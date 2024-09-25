@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">MyPortfolio</a>
+            <a href="#" class="nav-logo">NITHIN RONTALA</a>
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul class="nav-links">
@@ -25,8 +24,8 @@
             </ul>
         </div>
     </nav>
-  
-    <!-- Static Hero Section -->
+
+    <!-- Hero Section -->
     <section class="hero">
         <div class="overlay"></div>
         <div class="hero-content">
@@ -35,7 +34,6 @@
             <a href="#projects" class="cta-button">Explore Projects</a>
         </div>
     </section>
-
     <!-- About Section -->
     <section id="about" class="about-section">
         <h2>About Me</h2>
@@ -45,46 +43,56 @@
 
     <!-- Education Section -->
     <section id="education" class="education-section">
-        <h2>Education</h2>
-        <div class="education-card">
-            <h3>Schooling</h3>
-            <p><strong>BHASHYAM HIGH SCHOOL</strong></p>
-            <p>Completed high school with a strong academic record, emphasizing core subjects relevant to future studies with CGPA of 9.8.</p>
-        </div>
-        <div class="education-card">
-            <h3>Intermediate</h3>
-            <p><strong>BHASHYAM JUNIOR COLLEGE</strong></p>
-            <p>Completed with a focus on subjects foundational to higher education in technology and sciences.</p>
-        </div>        
-       
-        <div class="education-card">
-            <h3>Bachelor of Science in Computer Science</h3>
-            <p><strong>HYDERABAD INSTITUTE OF TECHNOLOGY AND MANAGMENT</strong>, 2020 - 2024</p>
-            <p>Graduated with honors, focusing on machine learning and artificial intelligence.</p>
-        </div>
-        <div class="education-card">
-            <h3>Master of Science in Information Technology</h3>
-            <p><strong>IIIT HYDERABAD</strong>, 2024 - 2026</p>
-            <p>Specialized in Information Technology.</p>
+        <br>
+        </br>
+        <h2 class="section-title">Education</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Schooling</h3>
+                <p><strong>BHASHYAM HIGH SCHOOL</strong></p>
+                <p>Completed high school with a CGPA of 9.8.</p>
+            </div>
+            <div class="card">
+                <h3>Intermediate</h3>
+                <p><strong>BHASHYAM JUNIOR COLLEGE</strong></p>
+                <p>Completed with a focus on subjects foundational to technology and sciences.</p>
+            </div>
+            <div class="card">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p><strong>HYDERABAD INSTITUTE OF TECHNOLOGY AND MANAGEMENT</strong></p>
+                <p>Graduated with honors, focusing on machine learning and AI.</p>
+            </div>
+            <div class="card">
+                <h3>Master of Science in Information Technology</h3>
+                <p><strong>IIIT HYDERABAD</strong></p>
+                <p>Specialized in Information Technology.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <h2>My Projects</h2>
-        <section class="project-card">
-            <h3>Violence Detection</h3>
-            <p>A model that effectively measures the percentage of violence when something harmful is detected.</p>
-        </section>
-        <section class="project-card">
-            <h3>Hand Gesture Recognition</h3>
-            <p>The effective recognition of hand gestures, breaking the communication barrier between people.</p>
-        </section>
-        <section class="project-card">
-            <h3>Twitter URL-Based Classification</h3>
-            <p>A model designed to classify and analyze Twitter URLs, identifying patterns and insights from social media content.</p>
-        </section>
-    </section>  
+      <!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <h2>My Projects</h2>
+    
+    <section class="project-card">
+        <img src="violence.jpg" alt="Violence Detection">
+        <h3>Violence Detection</h3>
+        <p>A model that effectively measures the percentage of violence when something harmful is detected.</p>
+    </section>
+
+    <section class="project-card">
+        <img src="hand.jpg" alt="Hand Gesture Recognition">
+        <h3>Hand Gesture Recognition</h3>
+        <p>The effective recognition of hand gestures, breaking the communication barrier between people.</p>
+    </section>
+
+    <section class="project-card">
+        <img src="twitter.jpg" alt="Twitter URL-Based Classification">
+        <h3>Twitter URL-Based Classification</h3>
+        <p>A model designed to classify and analyze Twitter URLs, identifying patterns and insights from social media content.</p>
+    </section>
+</section>
+
 
     <!-- Patents Section -->
     <section id="patents" class="patents-section">
@@ -104,8 +112,10 @@
             <p>GCSP Graduate-2024, Recognized by National Academy of Engineering.</p>
         </li>
 </section >
-    <!-- Footer Section -->
-    <footer class="footer-section">
+
+
+     <!-- Footer Section -->
+     <footer class="footer-section">
         <div class="footer-container">
             <!-- Social Media Logos -->
             <div id="contact" class="footer-logos">
@@ -119,7 +129,31 @@
             </div>
         </div>
     </footer>
-    
+    <!-- JavaScript -->
+    <script>
+        const navLinks = document.querySelectorAll('.nav-links li a');
 
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        // Remove 'active' class from all links
+                        navLinks.forEach(nav => nav.classList.remove('active'));
+                        // Add 'active' class to the clicked link
+                        this.classList.add('active');
+                    });
+                });
+
+// Maintain active state on page load if coming from another section
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const currentPath = window.location.hash;
+                        if (currentPath) {
+                            const currentLink = document.querySelector(`.nav-links a[href="${currentPath}"]`);
+                            if (currentLink) {
+                                currentLink.classList.add('active');
+                            }
+                        }
+                    });
+
+    </script>
+    
 </body>
 </html>
