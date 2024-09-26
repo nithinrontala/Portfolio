@@ -47,11 +47,17 @@ body {
     flex-wrap: wrap;
 }
 
-.project-card h1{
+.project-card {
     background-color: #fff;
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+.project-card h1{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
