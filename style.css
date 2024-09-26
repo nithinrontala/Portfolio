@@ -1,0 +1,114 @@
+/* Basic reset and font styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #fefcfc;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #ff6f61;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Projects Section */
+.projects-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Project Cards Container */
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card h1{
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+.project-details h2{
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 300px;
+    height:auto;
+    border-radius: 10px;
+    
+}
+
+.project-card h3, .project-card h1 {
+    color: #ff6f61;
+    margin-top: 15px;
+}
+
+.project-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Home Button */
+.home-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Home Button Hover Effect */
+.home-button:hover {
+    background-color: #e05549;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+.footer-section {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
