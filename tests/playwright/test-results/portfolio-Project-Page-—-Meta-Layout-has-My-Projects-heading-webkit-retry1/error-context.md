@@ -1,0 +1,83 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "NITHIN RONTALA" [ref=e4]:
+      - /url: index.html
+  - generic [ref=e5]:
+    - heading "My Projects" [level=2] [ref=e6]
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - heading "Video Analytics Project Link" [level=1] [ref=e9]:
+          - text: Video Analytics
+          - link "Project Link" [ref=e10]:
+            - /url: https://drive.google.com/drive/folders/1VkqjWwjTIMfomVO5mZSU5WAnK_19GfwX?usp=drive_link
+            - img "Project Link" [ref=e11]
+        - img "Video Analytics" [ref=e12]
+        - generic [ref=e13]:
+          - heading "Role" [level=2] [ref=e14]
+          - paragraph [ref=e15]: Developed a comprehensive end-to-end video analysis tool for editors, integrating face detection, audio transcription, and dashboard playback.
+          - heading "Problem" [level=2] [ref=e16]
+          - paragraph [ref=e17]: Video editors and analysts require efficient tools to extract insights from video content, including face detection, audio transcription, and playback, with the flexibility to add new detection modules.
+          - heading "Approach" [level=2] [ref=e18]
+          - paragraph [ref=e19]: Built an extensible video analytics app using OpenCV for video processing and Whisper for audio transcription. The architecture supports easy integration of additional modules for object/action detection and summarization, providing a dashboard for interactive playback and review.
+          - heading "Technologies Used" [level=2] [ref=e20]
+          - paragraph [ref=e21]: Python, OpenCV, Whisper, Dashboard UI
+          - heading "Results" [level=2] [ref=e22]
+          - paragraph [ref=e23]: The tool streamlines video analysis for editors, enabling automated face detection, accurate audio transcription, and interactive dashboard playback. Its extensible design allows for future enhancements such as object/action detection and content summarization.
+      - generic [ref=e24]:
+        - heading "Violence Detection Project Link" [level=1] [ref=e25]:
+          - text: Violence Detection
+          - link "Project Link" [ref=e26]:
+            - /url: https://drive.google.com/drive/folders/147dRLjKpbVi4LT4jBQj6ej5c3vq9xTIl?usp=drive_link
+            - img "Project Link" [ref=e27]
+        - img "Violence Detection" [ref=e28]
+        - generic [ref=e29]:
+          - heading "Role" [level=2] [ref=e30]
+          - paragraph [ref=e31]: Developed the model by training the model with the I3D Algorithm, including research about the issue.
+          - heading "Problem" [level=2] [ref=e32]
+          - paragraph [ref=e33]: Detecting violent behavior in real-time through surveillance cameras is a challenging task, often requiring manual intervention. This project aims to automate violence detection using machine learning models.
+          - heading "Approach" [level=2] [ref=e34]
+          - paragraph [ref=e35]: I developed a model that processes CCTV footage and identifies violent behavior. The model uses deep learning techniques such as CNNs and LSTMs to analyze the video feed. It then alerts security personnel when a violent action is detected.
+          - heading "Technologies Used" [level=2] [ref=e36]
+          - paragraph [ref=e37]: Python, TensorFlow, I3D Algorithm, OpenCV
+          - heading "Results" [level=2] [ref=e38]
+          - paragraph [ref=e39]: The model achieved an accuracy of 92% in detecting violent actions in a controlled environment. It has potential applications in public safety, retail, and law enforcement.
+      - generic [ref=e40]:
+        - heading "Hand Gesture Recognition Project Link" [level=1] [ref=e41]:
+          - text: Hand Gesture Recognition
+          - link "Project Link" [ref=e42]:
+            - /url: https://drive.google.com/drive/folders/15zZUg0Me3NWzvWg4MaYCftkrIMmV_E9i?usp=drive_link
+            - img "Project Link" [ref=e43]
+        - img "Hand Gesture Recognition" [ref=e44]
+        - generic [ref=e45]:
+          - heading "Role" [level=2] [ref=e46]
+          - paragraph [ref=e47]: Designed and trained a deep learning model that can recognize various hand gestures with high accuracy.
+          - heading "Problem" [level=2] [ref=e48]
+          - paragraph [ref=e49]: Effective communication between individuals who are unable to speak or hear can be challenging. This project aims to bridge that gap using hand gesture recognition technology.
+          - heading "Approach" [level=2] [ref=e50]
+          - paragraph [ref=e51]: The model uses Convolutional Neural Networks (CNNs) to process images of hand gestures. The system classifies the gestures into predefined categories and displays the corresponding text or action.
+          - heading "Technologies Used" [level=2] [ref=e52]
+          - paragraph [ref=e53]: Python, Keras, OpenCV, CNNs
+          - heading "Results" [level=2] [ref=e54]
+          - paragraph [ref=e55]: The hand gesture recognition model achieved 95% accuracy in recognizing a wide range of gestures. It has the potential to improve communication for individuals with disabilities and in situations requiring silent communication.
+      - generic [ref=e56]:
+        - heading "Twitter URL-Based Classification" [level=1] [ref=e57]
+        - img "Twitter URL-Based Classification" [ref=e58]
+        - generic [ref=e59]:
+          - heading "Role" [level=2] [ref=e60]
+          - paragraph [ref=e61]: Developed a system to classify and analyze the content of Twitter URLs for better insight extraction.
+          - heading "Problem" [level=2] [ref=e62]
+          - paragraph [ref=e63]: With millions of tweets shared daily, classifying content based on URLs is essential to filter important information from noise.
+          - heading "Approach" [level=2] [ref=e64]
+          - paragraph [ref=e65]: This project involves building a machine learning model that analyzes URLs shared on Twitter. The model classifies the content of the URLs, identifying patterns, trends, and key information that can be used for various business or social insights.
+          - heading "Technologies Used" [level=2] [ref=e66]
+          - paragraph [ref=e67]: Python, scikit-learn, Natural Language Processing (NLP), Twitter API
+          - heading "Results" [level=2] [ref=e68]
+          - paragraph [ref=e69]: The model provided 88% accuracy in classifying Twitter URLs, helping companies and organizations extract actionable insights from social media data.
+    - link "Home" [ref=e70]:
+      - /url: index.html
+  - contentinfo [ref=e71]:
+    - paragraph [ref=e72]: © 2024 Nithin Rontala. All rights reserved.
+```
